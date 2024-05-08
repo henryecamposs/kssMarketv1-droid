@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kss.kssmarketv10.MainActivity">
+
+
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_Gris"
+        android:padding="5dp"
+        android:paddingTop="0dp"
+        android:weightSum="1"
+        android:layout_weight="3.64" >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@android:color/holo_blue_dark"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView13"
+                    android:src="@drawable/btn_kalixtomarketsolo" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView14"
+                    android:contentDescription="LogoApp"
+                    android:src="@drawable/kalixtomarketban_logo"
+                    android:focusable="false"
+                    android:layout_gravity="right" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/imageView21"
+                android:src="@drawable/btn_error"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="right"
+                android:padding="2dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@color/color_Smoke"
+            android:padding="2dp"
+            android:weightSum="1">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="341dp"
+                android:id="@+id/dd"
+                android:focusable="false"
+                android:rowCount="16"
+                android:columnCount="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Acerca de: "
+                    android:id="@+id/textView9"
+                    android:textAppearance="@style/Kss_TextAparence.txtDatos"
+                    android:layout_weight="0"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_gravity="center|left"
+                    android:background="@color/color_Gris"
+                    android:padding="5dp"
+                    android:layout_margin="3dp"
+                    android:layout_marginBottom="0dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:id="@+id/textView10"
+                    android:textAppearance="@style/Kss_TextAparence.Titulo"
+                    android:paddingRight="10dp"
+                    android:layout_weight="0"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView11"
+                    android:textAppearance="@style/Kss_TextAparence.labelNormal"
+                    android:layout_weight="0"
+                    android:layout_row="3"
+                    android:layout_column="0"
+                    android:text="@string/kss_Acercade_DescripcionApp"
+                    android:textStyle="normal"
+                    android:typeface="normal"
+                    android:textSize="7pt"
+                    android:layout_columnSpan="2"
+                    android:background="@color/color_GrisClaro"
+                    android:padding="3dp"
+                    android:layout_margin="3dp"
+                    android:layout_marginTop="0dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3435656665656565"
+                    android:id="@+id/textView59"
+                    android:textAppearance="@style/Kss_TextAparence.labelNormal.Rojo"
+                    android:layout_weight="0"
+                    android:layout_row="4"
+                    android:layout_column="1"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12344-456"
+                    android:id="@+id/textView48"
+                    android:textAppearance="@style/Kss_TextAparence.labelNormal.Rojo"
+                    android:layout_weight="0"
+                    android:layout_row="7"
+                    android:layout_column="1"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SO:"
+                    android:id="@+id/textView52"
+                    android:textAppearance="@style/Kss_TextAparence.labelNormal"
+                    android:layout_weight="0"
+                    android:layout_row="9"
+                    android:layout_column="2"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ID Dispositivo:"
+                    android:id="@+id/textView49"
+                    android:textAppearance="@style/Kss_TextAparence.labelNormal"
+                    android:layout_weight="0"
+                    android:layout_row="4"
+                    android:layout_column="0"
+                    android:textSize="7pt"
+                    android:layout_marginRight="10dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView12"
+                    android:src="@drawable/ksslogo_banner1"
+                    android:scaleType="center"
+                    android:layout_weight="0.13"
+                    android:layout_row="4"
+                    android:layout_column="1"
+                    android:layout_gravity="center|right"
+                    android:layout_rowSpan="6"
+                    android:layout_marginRight="5dp"
+                    android:layout_margin="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Serial Activacion:"
+                    android:id="@+id/textView50"
+                    android:textAppearance="@style/Kss_TextAparence.labelNormal"
+                    android:layout_weight="0"
+                    android:layout_row="6"
+                    android:layout_column="0"
+                    android:textSize="7pt"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Código Activacion:"
+                    android:id="@+id/textView51"
+                    android:textAppearance="@style/Kss_TextAparence.labelNormal"
+                    android:layout_weight="0.22"
+                    android:layout_row="7"
+                    android:layout_column="0"
+                    android:textSize="7pt"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1234567"
+                    android:id="@+id/textView61"
+                    android:textAppearance="@style/Kss_TextAparence.labelNormal.Rojo"
+                    android:layout_weight="0"
+                    android:layout_row="6"
+                    android:layout_column="1"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SO:"
+                    android:id="@+id/textView62"
+                    android:textAppearance="@style/Kss_TextAparence.labelNormal"
+                    android:layout_weight="0"
+                    android:layout_column="0"
+                    android:textSize="7pt"
+                    android:layout_row="9"
+                    android:layout_marginRight="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Android 4.0"
+                    android:id="@+id/textView63"
+                    android:textAppearance="@style/Kss_TextAparence.labelNormal.Rojo"
+                    android:layout_weight="0"
+                    android:layout_row="9"
+                    android:layout_column="1"
+                    android:textSize="7pt" />
+
+                <Button
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:text="Activar"
+                    android:id="@+id/button"
+                    android:layout_row="7"
+                    android:layout_column="1"
+                    android:textColor="@color/color_Rojo"
+                    android:padding="5dp"
+                    android:layout_marginLeft="100dp"
+                    android:background="@color/color_LightSteelBlue"
+                    android:singleLine="false" />
+
+            </GridLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="henryecamposs@gmail.com"
+                android:id="@+id/textView27"
+                android:gravity="center|center_vertical"
+                android:textIsSelectable="false"
+                android:textSize="8pt"
+                android:textStyle="italic"
+                android:typeface="normal"
+                android:autoLink="email"
+                android:layout_weight="0.22"
+                android:layout_row="1"
+                android:layout_column="0"
+                android:textColorLink="@color/color_Azul"
+                android:password="false" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,365 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5sp"
+    android:weightSum="1"
+    android:focusableInTouchMode="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="500sp"
+        android:background="@color/color_Gris"
+        android:padding="5dp"
+        android:paddingTop="0dp"
+        android:weightSum="1"
+        android:layout_weight=".90" >
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="@android:color/holo_blue_dark"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView13"
+                    android:src="@drawable/btn_kalixtomarketsolo" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView14"
+                    android:contentDescription="LogoApp"
+                    android:src="@drawable/kalixtomarketban_logo"
+                    android:focusable="false"
+                    android:layout_gravity="right" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/imageView21"
+                android:src="@drawable/btn_error"
+                android:layout_marginLeft="5dp"
+                android:layout_gravity="right"
+                android:padding="2dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:weightSum="1"
+            android:background="#ff05055b"
+            android:layout_gravity="top"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp">
+
+            <EditText
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:layout_weight="1"
+                android:hint="Buscar Cliente" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/imageView15"
+                android:src="@drawable/btn_buscar"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:clickable="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:background="@color/color_Smoke"
+            android:padding="2dp"
+            android:layout_weight="1"
+            android:weightSum="1">
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2"
+                android:rowCount="43"
+                android:alignmentMode="alignBounds"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.42"
+                android:background="@drawable/toast_background_blue">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/editText29"
+                    android:layout_weight="0"
+                    android:hint="Datos del Cliente"
+                    android:textAppearance="@style/Kss_TextAparence.txtDatos"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:inputType="textCapWords|textPersonName"
+                    android:textColor="@color/color_Negro"
+                    android:textColorHint="@color/color_Gris" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/editText30"
+                    android:layout_weight="1"
+                    android:hint="Asunto del Email"
+                    android:textAppearance="@style/Kss_TextAparence.txtDatos"
+                    android:layout_row="3"
+                    android:layout_column="1"
+                    android:textColor="@color/color_Negro"
+                    android:textColorHint="@color/color_Gris"
+                    android:inputType="textCapSentences|textPersonName" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences|textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editText31"
+                    android:layout_weight="1"
+                    android:hint="Escribir mensaje "
+                    android:textAppearance="@style/Kss_TextAparence.txtDatos"
+                    android:layout_row="4"
+                    android:layout_column="1"
+                    android:textColor="@color/color_Negro"
+                    android:textColorHint="@color/color_Gris"
+                    android:lines="2" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:id="@+id/editText32"
+                    android:layout_weight="1"
+                    android:hint="Correo Electrónico"
+                    android:textAppearance="@style/Kss_TextAparence.txtDatos"
+                    android:layout_row="2"
+                    android:layout_column="1"
+                    android:textColor="@color/color_Negro"
+                    android:textColorHint="@color/color_Gris"
+                    android:inputType="textEmailAddress" />
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textCapSentences|textAutoComplete|textPersonName"
+                    android:ems="10"
+                    android:id="@+id/editText34"
+                    android:hint="Categorias preferidas "
+                    android:textAppearance="@style/Kss_TextAparence.txtDatos"
+                    android:layout_row="6"
+                    android:layout_column="1"
+                    android:textColor="@color/color_Negro"
+                    android:textColorHint="@color/color_Gris" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cliente: "
+                    android:id="@+id/textView53"
+                    android:textAppearance="@style/Kss_TextAparence.labelRegistro"
+                    android:paddingRight="10dp"
+                    android:layout_weight="0"
+                    android:layout_row="1"
+                    android:layout_column="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Asunto: "
+                    android:id="@+id/textView54"
+                    android:textAppearance="@style/Kss_TextAparence.labelRegistro"
+                    android:paddingRight="10dp"
+                    android:layout_weight="0"
+                    android:layout_row="3"
+                    android:layout_column="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mensaje:"
+                    android:id="@+id/textView55"
+                    android:textAppearance="@style/Kss_TextAparence.labelRegistro"
+                    android:paddingRight="10dp"
+                    android:layout_weight="0"
+                    android:layout_row="4"
+                    android:layout_column="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    android:id="@+id/textView56"
+                    android:textAppearance="@style/Kss_TextAparence.labelRegistro"
+                    android:paddingRight="10dp"
+                    android:layout_weight="0"
+                    android:layout_row="2"
+                    android:layout_column="0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Categorías:"
+                    android:id="@+id/textView58"
+                    android:textAppearance="@style/Kss_TextAparence.labelRegistro"
+                    android:paddingRight="10dp"
+                    android:layout_weight="0"
+                    android:layout_row="6"
+                    android:layout_column="0" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"
+                    android:background="@color/color_SteelBlue"
+                    android:gravity="center_vertical|center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Enviar email a Clientes"
+                        android:id="@+id/textView57"
+                        android:textAppearance="@style/Kss_TextAparence.SubTitulo"
+                        android:paddingRight="10dp"
+                        android:layout_weight="0"
+                        android:layout_row="6"
+                        android:layout_column="0"
+                        android:layout_columnSpan="2" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:padding="5dp"
+                    android:layout_gravity="left"
+                    android:layout_row="42"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2" >
+
+                    <LinearLayout
+                        style="@style/kss_widget.FrameRedondo"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:padding="5dp"
+                        android:layout_centerVertical="true">
+
+                        <ImageButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/imageButton23"
+                            android:src="@drawable/btn_email"
+                            android:scaleType="fitCenter"
+                            android:background="@color/color_GrisClaro"
+                            android:padding="7dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Enviar"
+                            android:id="@+id/textView60"
+                            android:textColor="@color/color_Negro"
+                            android:textSize="9pt" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </GridLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="0dp" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"
+                android:gravity="center_vertical|left">
+
+                <ImageButton
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageButton24"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/agt_home"
+                    android:background="@color/color_Gris" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:weightSum="1"
+                android:padding="0dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="henryecamposs@gmail.com"
+                    android:id="@+id/textView27"
+                    android:gravity="center|center_vertical"
+                    android:textColor="@color/color_Azul"
+                    android:textIsSelectable="false"
+                    android:textSize="9dp"
+                    android:textStyle="italic"
+                    android:typeface="normal"
+                    android:autoLink="email"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/imageView12"
+                    android:src="@drawable/ksslogo_banner1"
+                    android:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

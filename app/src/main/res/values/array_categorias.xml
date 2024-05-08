@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="kssCategoriasProductos">
+        <item>Computación</item>
+        <item>Celulares</item>
+        <item>Cargadores</item>
+        <item>Cables</item>
+        <item>Baterias</item>
+        <item>Accesorios Multimedia</item>
+        <item>Accesorios Celulares</item>
+        <item>Accesorios Hogar</item>
+        <item>Accesorios PC</item>
+    </string-array>
+</resources>

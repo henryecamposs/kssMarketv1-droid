@@ -1,0 +1,1 @@
+include ':app', ':kssgreendao_generador', ':kssutil'

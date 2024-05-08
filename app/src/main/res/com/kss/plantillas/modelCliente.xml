@@ -1,0 +1,503 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5sp"
+    android:weightSum="1"
+    android:focusableInTouchMode="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500sp"
+        android:layout_weight=".90"
+        android:background="@color/color_Gris"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:paddingTop="0dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/btn_kalixtomarketsolo" />
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:contentDescription="LogoApp"
+                    android:focusable="false"
+                    android:src="@drawable/kalixtomarketban_logo" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="right"
+                android:layout_marginLeft="5dp"
+                android:padding="2dp"
+                android:src="@drawable/btn_error" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="top"
+            android:background="#ff05055b"
+            android:gravity="center_vertical|left"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Buscar Cliente"
+                android:inputType="textPersonName" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/btn_buscar" />
+
+            <ImageView
+                android:id="@+id/imageView16"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/btn_comanda" />
+
+            <ImageView
+                android:id="@+id/imageView17"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/btn_circ_plusa" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:src="@drawable/btn_circ_minusr" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/color_Smoke"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="2dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                style="@style/kss_widget.FrameRedondo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="0.42"
+                    android:alignmentMode="alignBounds"
+                    android:background="@color/color_Gris"
+                    android:columnCount="2"
+                    android:padding="5dp"
+                    android:rowCount="43">
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="0"
+                        android:layout_weight="0"
+                        android:paddingRight="10dp"
+                        android:text="CI/RIF: "
+                        android:textAppearance="@style/Kss_TextAparence.labelRegistro" />
+
+                    <EditText
+                        android:id="@+id/editText12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_row="0"
+                        android:layout_weight="0"
+                        android:ems="10"
+                        android:hint="CI o RIF"
+                        android:inputType="textCapCharacters|textPhonetic|textAutoComplete"
+                        android:singleLine="false"
+                        android:textAppearance="@style/Kss_TextAparence.txtDatos" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="1"
+                        android:layout_weight="0"
+                        android:paddingRight="10dp"
+                        android:text="Nombre: "
+                        android:textAppearance="@style/Kss_TextAparence.labelRegistro" />
+
+                    <EditText
+                        android:id="@+id/editText3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_row="1"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Nombre"
+                        android:inputType="textCapWords|textAutoComplete|textPersonName"
+                        android:textAppearance="@style/Kss_TextAparence.txtDatos" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="2"
+                        android:layout_weight="0"
+                        android:paddingRight="10dp"
+                        android:text="Telefonos:"
+                        android:textAppearance="@style/Kss_TextAparence.labelRegistro" />
+
+                    <EditText
+                        android:id="@+id/editText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_row="2"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Números Telefónicos"
+                        android:inputType="phone|textCapSentences|textAutoComplete"
+                        android:textAppearance="@style/Kss_TextAparence.txtDatos" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="3"
+                        android:layout_weight="0"
+                        android:paddingRight="10dp"
+                        android:text="Email:"
+                        android:textAppearance="@style/Kss_TextAparence.labelRegistro" />
+
+                    <EditText
+                        android:id="@+id/editText4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_row="3"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Correo Electrónico"
+                        android:inputType="textEmailAddress"
+                        android:textAppearance="@style/Kss_TextAparence.txtDatos" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="4"
+                        android:layout_weight="0"
+                        android:paddingRight="10dp"
+                        android:text="Contacto:"
+                        android:textAppearance="@style/Kss_TextAparence.labelRegistro" />
+
+                    <EditText
+                        android:id="@+id/editText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_row="4"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="Persona Contacto"
+                        android:inputType="textCapWords|textAutoComplete|textPersonName"
+                        android:textAppearance="@style/Kss_TextAparence.txtDatos" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_row="5"
+                        android:layout_weight="0"
+                        android:paddingRight="10dp"
+                        android:text="Categorías:"
+                        android:textAppearance="@style/Kss_TextAparence.labelRegistro" />
+
+                    <EditText
+                        android:id="@+id/editText5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_row="5"
+                        android:ems="10"
+                        android:hint="Categorias preferidas "
+                        android:inputType="textCapCharacters|textAutoComplete|textPersonName"
+                        android:textAppearance="@style/Kss_TextAparence.txtDatos" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_column="0"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="left"
+                        android:layout_row="42"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/linearLayout2"
+                            style="@style/kss_widget.FrameRedondo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="133dp"
+                            android:layout_marginStart="133dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageButton
+                                android:id="@+id/imageButton2"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@color/color_GrisClaro"
+                                android:padding="7dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/btn_circ_oka" />
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Cancelar"
+                                android:textColor="@color/color_Negro"
+                                android:textSize="9pt" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            style="@style/kss_widget.FrameRedondo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toEndOf="@+id/linearLayout2"
+                            android:layout_toRightOf="@+id/linearLayout2"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <ImageButton
+                                android:id="@+id/imageButton3"
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:background="@color/color_GrisClaro"
+                                android:padding="7dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/btn_circ_oka" />
+
+                            <TextView
+                                android:id="@+id/textView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Guardar"
+                                android:textColor="@color/color_Negro"
+                                android:textSize="9pt" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </GridLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:gravity="fill_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|left"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="Cliente: 1 de 10"
+                        android:textAppearance="@style/Kss_TextAparence.labelRegistro"
+                        android:textSize="8pt" />
+
+                    <GridLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center_vertical">
+
+                        <ImageButton
+                            android:id="@+id/imageButton14"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:adjustViewBounds="true"
+                            android:background="@color/color_GrisClaro"
+                            android:clickable="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/btn_circ_first" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton15"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:background="@color/color_GrisClaro"
+                            android:clickable="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/btn_circ_anterior" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton16"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:background="@color/color_GrisClaro"
+                            android:clickable="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/btn_circ_siguiente" />
+
+                        <ImageButton
+                            android:id="@+id/imageButton17"
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="right|center_vertical"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:background="@color/color_GrisClaro"
+                            android:clickable="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/btn_circ_last" />
+                    </GridLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <LinearLayout
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|left"
+                android:orientation="horizontal"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp">
+
+                <ImageButton
+                    android:id="@+id/imageButton24"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@color/color_Gris"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/agt_home" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:orientation="horizontal"
+                android:padding="0dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:autoLink="email"
+                    android:gravity="center|center_vertical"
+                    android:text="henryecamposs@gmail.com"
+                    android:textColor="@color/color_Azul"
+                    android:textIsSelectable="false"
+                    android:textSize="9dp"
+                    android:textStyle="italic"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/imageView12"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ksslogo_banner1" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

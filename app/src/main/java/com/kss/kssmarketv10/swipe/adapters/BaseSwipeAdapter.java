@@ -1,0 +1,95 @@
+package com.kss.kssmarketv10.swipe.adapters;
+
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+
+
+import com.kss.kssmarketv10.swipe.SwipeLayout;
+import com.kss.kssmarketv10.swipe.implments.SwipeItemMangerImpl;
+import com.kss.kssmarketv10.swipe.interfaces.SwipeAdapterInterface;
+import com.kss.kssmarketv10.swipe.interfaces.SwipeItemMangerInterface;
+import com.kss.kssmarketv10.swipe.util.Attributes;
+
+import java.util.List;
+
+public abstract class BaseSwipeAdapter extends BaseAdapter implements SwipeItemMangerInterface, SwipeAdapterInterface {
+
+    private SwipeItemMangerImpl mItemManger = new SwipeItemMangerImpl(this);
+
+
+    public abstract int getSwipeLayoutResourceId(int position);
+
+
+    public abstract View generateView(int position, ViewGroup parent);
+
+
+    public abstract void fillValues(int position, View convertView);
+
+    @Override
+    public void notifyDatasetChanged() {
+        super.notifyDataSetChanged();
+    }
+
+
+    @Override
+    public final View getView(int position, View convertView, ViewGroup parent) {
+        View v = convertView;
+        if (v == null) {
+            v = generateView(position, parent);
+        }
+        mItemManger.bind(v, position);
+        fillValues(position, v);
+        return v;
+    }
+
+    @Override
+    public void openItem(int position) {
+        mItemManger.openItem(position);
+    }
+
+    @Override
+    public void closeItem(int position) {
+        mItemManger.closeItem(position);
+    }
+
+    @Override
+    public void closeAllExcept(SwipeLayout layout) {
+        mItemManger.closeAllExcept(layout);
+    }
+
+    @Override
+    public void closeAllItems() {
+        mItemManger.closeAllItems();
+    }
+
+    @Override
+    public List<Integer> getOpenItems() {
+        return mItemManger.getOpenItems();
+    }
+
+    @Override
+    public List<SwipeLayout> getOpenLayouts() {
+        return mItemManger.getOpenLayouts();
+    }
+
+    @Override
+    public void removeShownLayouts(SwipeLayout layout) {
+        mItemManger.removeShownLayouts(layout);
+    }
+
+    @Override
+    public boolean isOpen(int position) {
+        return mItemManger.isOpen(position);
+    }
+
+    @Override
+    public Attributes.Mode getMode() {
+        return mItemManger.getMode();
+    }
+
+    @Override
+    public void setMode(Attributes.Mode mode) {
+        mItemManger.setMode(mode);
+    }
+}

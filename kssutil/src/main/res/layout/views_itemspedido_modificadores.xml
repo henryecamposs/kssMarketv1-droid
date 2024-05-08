@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/selector_itempedido_estado"
+    android:padding="3dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp">
+
+        <TextView
+            style="@style/Kss_TextAparence.lstItemsNegro"
+            android:id="@+id/tvCanti_PedidoExtra"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="99"
+            android:clickable="false"
+            android:layout_gravity="center_vertical|right"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imgItem" />
+
+        <TextView
+            style="@style/Kss_TextAparence.lstItemsNegro"
+            android:id="@+id/tvItemMenu_PedidoExtra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:clickable="false"
+            android:layout_column="2"
+            android:text="Producto"
+            android:layout_gravity="center_vertical"
+            android:textSize="18dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lvModificadores_PedidoExtra"
+            android:choiceMode="singleChoice" />
+    </LinearLayout>
+
+</LinearLayout>

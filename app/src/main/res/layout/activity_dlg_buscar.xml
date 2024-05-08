@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kss.kssmarketv10.dlgBuscar">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="0dp"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivLogoApp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="LogoApp"
+                    android:focusable="false"
+                    android:src="@drawable/kalixtomarketban_logo" />
+
+                <ImageView
+                    android:id="@+id/ivExit_Bus"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="top|right"
+                    android:src="@drawable/btn_error" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:src="@drawable/btn_kalixtomarketsolo" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/kss_widget.FrameRedondo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <RadioGroup
+                android:id="@+id/rgTabla_bus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/view_below"
+                android:layout_gravity="center_horizontal"
+                android:background="#ff05055b"
+                android:checkedButton="@+id/radioButton3"
+                android:orientation="horizontal"
+                android:padding="2dp">
+
+                <RadioButton
+                    android:id="@+id/rbCat_Bus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Productos" />
+
+                <RadioButton
+                    android:id="@+id/rbClie_Bus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Clientes" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ksslayer_gris"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <RadioGroup
+                    android:id="@+id/rgAllOnly_Bus"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/view_below"
+                    android:checkedButton="@+id/rbAll_bus"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rbAll_Bus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:checked="true"
+                        android:padding="0dp"
+                        android:text="Todos" />
+
+                    <RadioButton
+                        android:id="@+id/rbOnly_Bus"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_weight="1.21" />
+
+                    <AutoCompleteTextView
+                        android:id="@+id/acBuscar_Bus"
+                        android:layout_width="192dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Seleccionar Categoría"
+                        android:textColor="@color/color_Naranja" />
+
+                    <ImageView
+                        android:id="@+id/ivBuscar_Bus"
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_default"
+                        android:clickable="true"
+                        android:paddingLeft="5dp"
+                        android:src="@drawable/btn_buscar" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lvListItems_Bus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="0dp"
+            android:background="@color/color_Smoke"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="2dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                style="@style/kss_widget.FrameRedondo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:layout_centerVertical="false"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvExportarPDF_Bus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/selector_default"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Exportar PDF"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_Negro" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                style="@style/kss_widget.FrameRedondo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:layout_centerVertical="false"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvExportarExcel_Bus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/selector_default"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Exportar Excel"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_Negro" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                style="@style/kss_widget.FrameRedondo"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:layout_centerVertical="false"
+                android:layout_gravity="center"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvEnviar_Bus"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp"
+                    android:background="@drawable/selector_default"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="Enviar Email"
+                    android:textAlignment="center"
+                    android:textColor="@color/color_Negro" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:background="@color/colorPrimary"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.44"
+                android:padding="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp">
+
+                <ImageButton
+                    android:id="@+id/ibHome_Bus"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_margin="0dp"
+                    android:elevation="0dp"
+                    android:padding="0dp"
+                    android:paddingBottom="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/agt_home" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="10dp"
+                    android:autoLink="email"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="henryecamposs@gmail.com"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/color_Azul"
+                    android:textIsSelectable="false"
+                    android:textSize="9dp"
+                    android:textStyle="italic"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="127dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ksslogo_banner1" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kss.kssmarketv10.dlgAcercade">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="0dp"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivLogoApp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="LogoApp"
+                    android:focusable="false"
+                    android:src="@drawable/kalixtomarketban_logo" />
+
+                <ImageView
+                    android:id="@+id/ivExit_Ace"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="top|right"
+                    android:src="@drawable/btn_error" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:src="@drawable/btn_kalixtomarketsolo" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/kss_widget.FrameRedondo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:layout_weight="0.1"
+            android:baselineAligned="false"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:textAlignment="inherit"
+            android:weightSum="1">
+
+            <GridLayout
+                android:id="@+id/acercade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:columnCount="2"
+                android:focusable="false"
+                android:rowCount="16">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_gravity="center|left"
+                    android:layout_margin="3dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_row="0"
+                    android:layout_weight="0"
+                    android:background="@color/color_Gris"
+                    android:padding="5dp"
+                    android:text="Acerca de: "
+                    android:textAppearance="@style/Kss_TextAparence.txtDatos" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="center"
+                    android:layout_row="0"
+                    android:layout_weight="0"
+                    android:paddingRight="10dp"
+                    android:text="@string/app_name"
+                    android:textAppearance="@style/Kss_TextAparence.Titulo" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_columnSpan="2"
+                    android:layout_margin="3dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_row="3"
+                    android:layout_weight="0"
+                    android:background="@color/color_GrisClaro"
+                    android:padding="3dp"
+                    android:text="@string/kss_Acercade_DescripcionApp"
+                    android:textAlignment="textStart"
+                    android:textAppearance="@style/Kss_TextAparence.labelNormal"
+                    android:textSize="7pt"
+                    android:textStyle="normal"
+                    android:typeface="normal" />
+
+                <TextView
+                    android:id="@+id/textView59"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="4"
+                    android:layout_weight="0"
+                    android:text="3435656665656565"
+                    android:textAppearance="@style/Kss_TextAparence.labelNormal.Rojo"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:id="@+id/textView48"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="7"
+                    android:layout_weight="0"
+                    android:text="12344-456"
+                    android:textAppearance="@style/Kss_TextAparence.labelNormal.Rojo"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:id="@+id/textView49"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginRight="10dp"
+                    android:layout_row="4"
+                    android:layout_weight="0"
+                    android:text="ID Dispositivo:"
+                    android:textAppearance="@style/Kss_TextAparence.labelNormal"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:id="@+id/textView50"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginRight="10dp"
+                    android:layout_row="6"
+                    android:layout_weight="0"
+                    android:text="Serial Activacion:"
+                    android:textAppearance="@style/Kss_TextAparence.labelNormal"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:id="@+id/textView51"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginRight="10dp"
+                    android:layout_row="7"
+                    android:layout_weight="0.22"
+                    android:text="Código Activacion:"
+                    android:textAppearance="@style/Kss_TextAparence.labelNormal"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:id="@+id/textView61"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="6"
+                    android:layout_weight="0"
+                    android:text="1234567"
+                    android:textAppearance="@style/Kss_TextAparence.labelNormal.Rojo"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:id="@+id/textView62"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_marginRight="10dp"
+                    android:layout_row="9"
+                    android:layout_weight="0"
+                    android:text="SO:"
+                    android:textAppearance="@style/Kss_TextAparence.labelNormal"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:id="@+id/textView63"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="9"
+                    android:layout_weight="0"
+                    android:text="Android 4.0"
+                    android:textAppearance="@style/Kss_TextAparence.labelNormal.Rojo"
+                    android:textSize="7pt" />
+
+                <Button
+                    android:id="@+id/button"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_column="1"
+                    android:layout_marginLeft="100dp"
+                    android:layout_row="6"
+                    android:layout_rowSpan="4"
+                    android:background="@color/color_LightSteelBlue"
+                    android:padding="10dp"
+                    android:singleLine="false"
+                    android:text="Activar" />
+
+            </GridLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:background="@color/colorPrimary"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.44"
+                android:padding="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp">
+
+                <ImageButton
+                    android:id="@+id/ibHome_Ace"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_margin="0dp"
+                    android:elevation="0dp"
+                    android:padding="0dp"
+                    android:paddingBottom="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/agt_home" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="10dp"
+                    android:autoLink="email"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="henryecamposs@gmail.com"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/color_Azul"
+                    android:textIsSelectable="false"
+                    android:textSize="9dp"
+                    android:textStyle="italic"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="127dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ksslogo_banner1" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

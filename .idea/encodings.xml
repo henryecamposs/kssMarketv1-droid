@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/DbxClient/DropboxClientFactory.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/DbxClient/PicassoClient.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/activities/FilesActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/activities/LoginActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/activities/SplashActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/adapters/FilesAdapters.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/application/AppController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/application/AppController.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/asynctasks/CreateSharedLinkTask.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/asynctasks/DeleteFileTask.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/asynctasks/DeleteFileTask.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/asynctasks/DeleteFolderTask.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/asynctasks/DownloadFileTask.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/asynctasks/GetFilesDetailsTask.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/asynctasks/GetUserAccountDetailsTask.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/asynctasks/RenameFileTask.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/asynctasks/SharedLinkTask.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/asynctasks/SharedLinkTask.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/asynctasks/UploadFileTasks.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/asynctasks/UploadFileTasks.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/base/DropboxActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/handler/FileThumbnailRequestHandler.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/helper/UriHelpers.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/interfaces/AccountDetailCallback.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/interfaces/CreateSharedLinkCallback.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/interfaces/DeleteFileCallback.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/interfaces/DeleteFolderCallback.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/interfaces/DownloadFileCallback.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/interfaces/FilesCallback.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/interfaces/FilesDetailCallback.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/interfaces/RenameFileCallback.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/interfaces/SharedLinkCallback.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/interfaces/UploadFileCallback.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/login/DropboxLoginActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/login/DropboxLoginActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/DropBox/views/FABWithAnimation.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/MainActivity.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/clsGalleryAdapter.java" charset="windows-1252" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/dlgReportes.java" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/email/GMail.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/email/SendMailTask.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/swipe/SimpleSwipeListener.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/swipe/SwipeLayout.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/swipe/adapters/ArraySwipeAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/swipe/adapters/BaseSwipeAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/swipe/adapters/CursorSwipeAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/swipe/adapters/RecyclerSwipeAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/swipe/adapters/SimpleCursorSwipeAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/swipe/implments/SwipeItemMangerImpl.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/swipe/interfaces/SwipeAdapterInterface.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/swipe/interfaces/SwipeItemMangerInterface.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/kss/kssmarketv10/swipe/util/Attributes.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kssutil/src/main/java/com/kss/kssutil/dlgMsg_personalizado.java" charset="windows-1252" />
+    <file url="PROJECT" charset="ISO-8859-1" />
+  </component>
+</project>

@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kss.kssmarketv10.dlgProductos">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="top|center_horizontal"
+        android:orientation="vertical"
+        android:padding="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="0dp"
+            android:background="@android:color/holo_blue_dark"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/ivLogoApp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="LogoApp"
+                    android:focusable="false"
+                    android:src="@drawable/kalixtomarketban_logo" />
+
+                <ImageView
+                    android:id="@+id/ivExit_Prod"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="top|right"
+                    android:background="@drawable/selector_default"
+                    android:clickable="true"
+                    android:src="@drawable/btn_error" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:src="@drawable/btn_kalixtomarketsolo" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/kss_widget.FrameRedondo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="0.1"
+            android:baselineAligned="false"
+            android:gravity="center_vertical|center_horizontal"
+            android:orientation="vertical"
+            android:padding="3dp">
+
+            <LinearLayout
+                android:id="@+id/lltopBar_Prod"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="top"
+                android:background="#ff05055b"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:weightSum="1">
+
+
+                <AutoCompleteTextView
+                    android:id="@+id/acBuscar_Prod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Buscar Productos"
+                    android:textColor="@color/color_Naranja"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/ivBuscar_Prod"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_default"
+                    android:clickable="true"
+                    android:src="@drawable/btn_buscar" />
+
+                <ImageView
+                    android:id="@+id/ivEdit_Prod"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_default"
+                    android:clickable="true"
+                    android:src="@drawable/btn_comanda" />
+
+                <ImageView
+                    android:id="@+id/ivAdd_Prod"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_default"
+                    android:clickable="true"
+                    android:src="@drawable/btn_circ_plusa" />
+
+                <ImageView
+                    android:id="@+id/ivDel_Prod"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_default"
+                    android:clickable="true"
+                    android:src="@drawable/btn_circ_minusr" />
+            </LinearLayout>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:alignmentMode="alignBounds"
+                android:columnCount="2"
+                android:padding="5dp"
+                android:rowCount="20">
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_column="1"
+                    android:layout_gravity="top|left"
+                    android:layout_row="0"
+                    android:layout_weight="0"
+                    android:text="Nombre: "
+                    android:textAppearance="@style/Kss_TextAparence.labelRegistro" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_column="1"
+                    android:layout_gravity="top|left"
+                    android:layout_row="1"
+                    android:layout_weight="0"
+                    android:text="Descripción:"
+                    android:textAppearance="@style/Kss_TextAparence.labelRegistro" />
+
+                <EditText
+                    android:id="@+id/etNombre_Prod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="10dp"
+                    android:layout_row="0"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Nombre"
+                    android:inputType="textCapCharacters|textAutoComplete|textPersonName"
+                    android:textAppearance="@style/Kss_TextAparence.txtDatos"
+                    android:textColor="@color/color_Negro"
+                    android:textColorHint="@color/color_Gris" />
+
+                <EditText
+                    android:id="@+id/etPrecioC_Prod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="5"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Precio Costo"
+                    android:inputType="textCapWords|numberDecimal"
+                    android:textAppearance="@style/Kss_TextAparence.txtDatos"
+                    android:textColor="@color/color_Negro"
+                    android:textColorHint="@color/color_Gris" />
+
+                <EditText
+                    android:id="@+id/etDesc_Prod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="10dp"
+                    android:layout_row="1"
+                    android:ems="10"
+                    android:hint="Descripción Larga"
+                    android:inputType="textCapSentences|textAutoComplete|textMultiLine|textPersonName"
+                    android:lines="2"
+                    android:linksClickable="false"
+                    android:textAppearance="@style/Kss_TextAparence.txtDatos"
+                    android:textColor="@color/color_Negro"
+                    android:textColorHint="@color/color_Gris" />
+
+                <LinearLayout
+                    android:layout_width="80dp"
+                    android:layout_height="20dp"
+                    android:layout_column="1"
+                    android:layout_gravity="right|top"
+                    android:layout_row="0"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvCodigo_Prod"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_gravity="left|top"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_row="0"
+                        android:layout_weight="0"
+                        android:padding="0dp"
+                        android:paddingRight="5dp"
+                        android:text="Código:"
+                        android:textAppearance="@style/Kss_TextAparence.labelRegistro"
+                        android:textSize="7pt" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_column="0"
+                    android:layout_row="0"
+                    android:layout_rowSpan="4"
+                    android:background="@drawable/ksslayer_redondo_gris">
+
+                    <ImageButton
+                        android:id="@+id/ivTakeImage_Prod"
+                        style="@style/kss_widget.FrameRedondo"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="bottom|right"
+                        android:layout_row="0"
+                        android:layout_rowSpan="2"
+                        android:background="@drawable/selector_default"
+                        android:clickable="true"
+                        android:drawableTop="@drawable/kss_camara"
+                        android:longClickable="true"
+                        android:padding="5dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/kss_camara"
+                        android:text="\nTomar Foto" />
+
+                    <TextView
+                        android:id="@+id/tvZoom_Prod"
+                        android:layout_width="55dp"
+                        android:layout_height="30dp"
+                        android:layout_column="0"
+                        android:layout_gravity="left|top"
+                        android:layout_row="0"
+                        android:layout_weight="0"
+                        android:alpha=".6"
+                        android:autoText="false"
+                        android:background="@drawable/selector_itempedido_estado"
+                        android:clickable="true"
+                        android:padding="0dp"
+                        android:text="Zoom"
+                        android:textAppearance="@style/Kss_TextAparence.labelRegistro"
+                        android:textSize="10pt" />
+
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="3"
+                    android:layout_weight="0"
+                    android:paddingRight="10dp"
+                    android:text="Categoría:"
+                    android:textAppearance="@style/Kss_TextAparence.labelRegistro" />
+
+                <Spinner
+                    android:id="@+id/spCategorias_Prod"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="3" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="4"
+                    android:layout_weight="0"
+                    android:paddingRight="10dp"
+                    android:text="Impuesto:"
+                    android:textAppearance="@style/Kss_TextAparence.labelRegistro" />
+
+                <Spinner
+                    android:id="@+id/spImpuestos_Prod"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="4" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="5"
+                    android:layout_weight="0"
+                    android:paddingRight="10dp"
+                    android:text="Precio Costo:"
+                    android:textAppearance="@style/Kss_TextAparence.labelRegistro" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="0"
+                    android:layout_row="6"
+                    android:layout_weight="0"
+                    android:paddingRight="10dp"
+                    android:text="Precio Venta:"
+                    android:textAppearance="@style/Kss_TextAparence.labelRegistro" />
+
+                <EditText
+                    android:id="@+id/etPrecioV_Prod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_column="1"
+                    android:layout_row="6"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:hint="Precio Venta"
+                    android:inputType="textCapWords|numberDecimal"
+                    android:textAppearance="@style/Kss_TextAparence.txtDatos"
+                    android:textColor="@color/color_Negro"
+                    android:textColorHint="@color/color_Gris" />
+
+            </GridLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="0dp"
+            android:background="@color/color_Smoke"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="2dp"
+            android:weightSum="1">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="0dp">
+
+                <LinearLayout
+                    android:id="@+id/llSaveCancel_Prod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:padding="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/llCancel_Prod"
+                        style="@style/kss_widget.FrameRedondo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentStart="false"
+                        android:layout_centerVertical="false"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvCancel_Prod"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/selector_default"
+                            android:clickable="true"
+                            android:text="Cancelar"
+                            android:textAlignment="center"
+                            android:textColor="@color/color_Negro" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/llSave_Prod"
+                        style="@style/kss_widget.FrameRedondo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="false"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvSave_Prod"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:background="@drawable/selector_default"
+                            android:clickable="true"
+                            android:text="Guardar"
+                            android:textAlignment="center"
+                            android:textColor="@color/color_Negro" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <GridLayout
+                    android:id="@+id/glbtnMover_Prod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical">
+
+                    <ImageButton
+                        android:id="@+id/ibFirst_Prod"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/selector_default"
+                        android:clickable="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/btn_circ_first" />
+
+                    <ImageButton
+                        android:id="@+id/ibPrev_Prod"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_default"
+                        android:clickable="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/btn_circ_anterior" />
+
+                    <ImageButton
+                        android:id="@+id/ibNext_Prod"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_default"
+                        android:clickable="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/btn_circ_siguiente" />
+
+                    <ImageButton
+                        android:id="@+id/ibLast_Prod"
+                        style="@android:style/Widget.Holo.ImageButton"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right|center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_default"
+                        android:clickable="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/btn_circ_last" />
+                </GridLayout>
+
+                <TextView
+                    android:id="@+id/tvNumReg_Prod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="0 de 0"
+                    android:textColor="@color/color_Negro" />
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:background="@color/colorPrimary"
+            android:gravity="right"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.44"
+                android:padding="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp">
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginRight="10dp"
+                    android:autoLink="email"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="henryecamposs@gmail.com"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/color_Azul"
+                    android:textIsSelectable="false"
+                    android:textSize="9dp"
+                    android:textStyle="italic"
+                    android:typeface="normal" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="127dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ksslogo_banner1" />
+
+                <ImageButton
+                    android:id="@+id/ibHome_Prod"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_margin="0dp"
+                    android:background="@drawable/selector_default"
+                    android:elevation="0dp"
+                    android:padding="0dp"
+                    android:paddingBottom="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="0dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/agt_home"
+                    tools:clickable="true" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

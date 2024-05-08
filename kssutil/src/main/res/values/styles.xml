@@ -1,0 +1,299 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/color_Naranja</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:windowBackground">@color/color_Smoke</item>
+    </style>
+
+
+    <style name="kss_theme.Dialog" parent="@android:style/Theme.Dialog">
+        <item name="@android:background">@color/color_Gris</item>
+        <item name="@android:textColor">@color/color_Azul</item>
+        <item name="android:bottomBright">@color/color_Gris</item>
+        <item name="android:bottomDark">@color/color_Gris</item>
+        <item name="android:bottomMedium">@color/color_Gris</item>
+        <item name="android:centerBright">@color/color_Gris</item>
+        <item name="android:centerDark">@color/color_Gris</item>
+        <item name="android:centerMedium">@color/color_Gris</item>
+        <item name="android:fullBright">@color/color_Azul</item>
+        <item name="android:fullDark">@color/color_Azul</item>
+        <item name="android:topBright">@color/color_Azul</item>
+        <item name="android:topDark">@color/color_Azul</item>
+    </style>
+
+    <!--Estilo de Texto-->
+
+    <style name="Kss_TextAparence" parent="@android:style/TextAppearance"></style>
+
+    <style name="Kss_TextAparence.Dialog">
+        <!-- Set text size and color of title and message here -->
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@color/color_Negro</item>
+    </style>
+
+    <style name="Kss_TextAparence.WindowsTitulo">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:background">@drawable/ksslayer_redondo_gris</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <style name="Kss_TextAparence.Widget">
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!--Estilos personalizados para los componentes del formulario-->
+    <style name="Kss_TextAparence.labelNormal">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textColor">@color/color_Negro</item>
+        <item name="android:textSize">9pt</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+    <style name="Kss_TextAparence.labelNormal.Azul">
+        <item name="android:textColor">@color/color_Azul</item>
+    </style>
+
+    <style name="Kss_TextAparence.labelNormal.Rojo">
+        <item name="android:textColor">@color/color_Rojo</item>
+    </style>
+
+    <style name="Kss_TextAparence.labelNormal.Amarillo">
+        <item name="android:textColor">@color/color_Amarillo</item>
+    </style>
+
+    <style name="Kss_TextAparence.labelNormal.Blanco">
+        <item name="android:textColor">@color/color_Blanco</item>
+    </style>
+
+    <style name="Kss_TextAparence.labelNormal.Azul.FilledBlanco" >
+        <item name="android:background">@color/color_Blanco</item>
+    </style>
+    <style name="Kss_TextAparence.labelNormal.Rojo.FilledBlanco" >
+        <item name="android:background">@color/color_Blanco</item>
+    </style>
+    <style name="Kss_TextAparence.labelNormal.Amarillo.FilledBlanco" >
+        <item name="android:background">@color/color_Blanco</item>
+    </style>
+    <style name="Kss_TextAparence.labelNormal.FilledBlanco" >
+        <item name="android:background">@color/color_Blanco</item>
+    </style>
+
+    <style name="Kss_TextAparence.Header">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/color_Azul</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="Kss_TextAparence.Message">
+        <item name="android:textStyle">italic</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Kss_TextAparence.txtDatos">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textSize">9pt</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_Negro</item>
+        <item name="android:textColorHint">@color/color_Gris</item>
+    </style>
+
+    <style name="Kss_TextAparence.LabelTxt">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textSize">8pt</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/color_Negro</item>
+    </style>
+    <!-- SubTitulos -->
+    <style name="Kss_TextAparence.SubTitulo">
+        <item name="android:textColor">@color/color_Negro</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Kss_TextAparence.SubTitulo.SteelBlue">
+        <item name="android:textColor">@color/color_LightSteelBlue</item>
+    </style>
+
+    <style name="Kss_TextAparence.SubTitulo.Rojo">
+        <item name="android:textColor">@color/color_Rojo</item>
+    </style>
+
+    <style name="Kss_TextAparence.SubTitulo.Azul">
+        <item name="android:textColor">@color/color_Azul</item>
+    </style>
+
+    <style name="Kss_TextAparence.SubTitulo.Blanco">
+        <item name="android:textColor">@color/color_Blanco</item>
+    </style>
+
+    <!-- Titulos -->
+    <style name="Kss_TextAparence.Titulo">
+        <item name="android:textColor">@color/color_Negro</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Kss_TextAparence.Titulo.Rojo">
+        <item name="android:textColor">@color/color_Rojo</item>
+    </style>
+
+    <style name="Kss_TextAparence.Titulo.Azul">
+        <item name="android:textColor">@color/color_Azul</item>
+    </style>
+
+    <style name="Kss_TextAparence.txtInput">
+        <item name="android:textColor">@color/color_Negro</item>
+        <item name="android:textSize">30sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Kss_TextAparence.txtInput.Azul">
+        <item name="android:textColor">@color/color_Azul</item>
+    </style>
+
+    <style name="Kss_TextAparence.txtInput.Rojo">
+        <item name="android:textColor">@color/color_Rojo</item>
+    </style>
+
+    <style name="Kss_TextAparence.txtInput.Blanco">
+        <item name="android:textColor">@color/color_Blanco</item>
+    </style>
+
+    <style name="Kss_TextAparence.lstItemsNegro">
+        <item name="android:textColor">@color/color_Negro</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+    <style name="Kss_TextAparence.labelRegistro">
+        <item name="android:textColor">@color/color_Negro</item>
+        <item name="android:textSize">9pt</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+    <style name="Kss_TextAparence.labelRegistro.Azul">
+        <item name="android:textColor">@color/color_Azul</item>
+    </style>
+
+    <style name="Kss_TextAparence.labelRegistro.Amarillo">
+        <item name="android:textColor">@color/color_Amarillo</item>
+    </style>
+
+    <style name="Kss_TextAparence.lstItemsNegro.sub">
+        <item name="android:textColor">@color/color_Smoke</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:typeface">normal</item>
+    </style>
+
+
+    <!-- Estilos de Widgets-->
+
+    <style name="kss_widget" parent="@android:style/Widget">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:capitalize">characters</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/color_Negro</item>
+    </style>
+
+    <style name="kss_widget.ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="kss_widget.Separator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@android:color/darker_gray</item>
+    </style>
+
+
+    <style name="kss_widget.NumPicker">
+        <item name="android:background">@drawable/kssboton_redondo_grad_steelblue</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:fadingEdge">horizontal</item>
+        <item name="android:fadingEdgeLength">50dip</item>
+        <item name="android:colorBackground">@color/color_Azul</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:typeface">normal</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_Negro</item>
+    </style>
+
+    <style name="kss_widget.FrameRedondo">
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:background">@drawable/ksslayer_redondo_gris</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_Negro</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+    }<style name="kss_widget.Frame">
+    <item name="android:scrollHorizontally">true</item>
+    <item name="android:background">@drawable/ksslayer_redondo_gris</item>
+    <item name="android:padding">2dp</item>
+    <item name="android:layout_margin">2dp</item>
+    <item name="android:textStyle">bold</item>
+    <item name="android:textColor">@color/color_Negro</item>
+    <item name="android:layout_gravity">center_vertical</item>
+</style>
+
+    <style name="kss_widget.OptionButton">
+        <item name="android:scrollHorizontally">true</item>
+        <item name="android:background">@drawable/ksslayer_redondo_gris</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_margin">4dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/color_Negro</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <!-- Estilo Dialogo -->
+    <style name="kss_themeBaseDialog" parent="@android:style/Theme.Dialog"> <!-- Dialog attributes -->
+    </style>
+
+    <style name="kss_themeBaseDialog.Dialog">
+
+        <item name="android:windowFrame">@null</item>
+        <!-- <item name="android:windowBackground">@drawable/dialog_full_holo_dark</item> -->
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="FullscreenTheme" parent="AppTheme">
+        <item name="android:windowBackground">@null</item>
+    </style>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/selector_itempedido_estado"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageView
+        android:id="@+id/imgItem"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:clickable="false"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/btn_cancel_r" />
+
+    <TextView
+        android:id="@+id/txtItemCantidad"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:text="99"
+        android:clickable="false"
+        android:layout_gravity="center_vertical|right"
+        android:textStyle="bold"
+        style="@style/Kss_TextAparence.lstItemsNegro"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imgItem" />
+
+    <TextView
+        android:id="@+id/txtItemDescr"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:text="Producto"
+        android:layout_gravity="center_vertical"
+        style="@style/Kss_TextAparence.lstItemsNegro"
+        android:textSize="18dp"
+        android:layout_alignParentTop="true"
+        />
+
+    <TextView
+        android:id="@+id/txtItemTotal"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:clickable="false"
+        android:layout_column="3"
+        android:text="999.999,99"
+        android:layout_gravity="center_vertical|right"
+        style="@style/Kss_TextAparence.lstItemsNegro"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txtItemDescr"
+         />
+
+</RelativeLayout>

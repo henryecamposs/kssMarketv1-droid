@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--This is how hex colors work:
+    # + Transparent + Transparent + Red + Red + Green + Green + Blue + Blue.
+    So lets take your center color: android:centerColor="#e7eff8"
+    50 % of FF = 7F.
+    End results = #7fe7eff8"-->
+    <!--Colores primarios -->
+    <color name="color_Blanco">#FFFFFFFF</color>
+    <color name="color_Negro">#000</color>
+    <color name="color_Rojo">#FFFF0000</color>
+    <color name="color_Azul">#0000ff</color>
+    <color name="color_Verde">#00FF00</color>
+    <color name="color_Amarillo">#FFFFF000</color>
+
+    <!-- Colores definidos -->
+    <color name="color_SteelBlue">#ff6b78c6</color>
+    <color name="color_LightSteelBlue">#595e74</color>
+
+    <color name="color_Naranja">#ffbe02</color>
+    <color name="color_NaranjaClaro">#070501</color>
+
+    <color name="color_Purpura">#FFFA09DD</color>
+    <color name="color_Smoke">#f0f0f0</color>
+    <color name="color_Lima">#FF00FF1B</color>
+
+    <color name="color_Pastel_verde">#FFA2FF8A</color>
+    <color name="color_Pastel_verdeClaro">#ffd9ffd2</color>
+
+    <color name="color_Gris">#66000000</color>
+    <color name="color_GrisClaro">#cdcdcd</color>
+
+    <color name="color_AmarilloClaro">#FFFDFFC6</color>
+
+    <!-- Transparrentes -->
+    <color name="translucent_gris">#7F000000</color>
+    <color name="translucent_blanco">#7ffdfdfd</color>
+    <color name="translucent_azul">#7f0000ff</color>
+
+    <!-- System -->
+    <color name="colorPrimary">@color/color_LightSteelBlue</color>
+    <color name="colorPrimaryDark">@color/color_SteelBlue</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBackground">#495e78</color>
+
+    <!-- Colores Tema FoodDroid-->
+    <color name="btnPresionado">@color/colorAccent</color>
+    <color name="btnActivado">@color/colorPrimaryDark</color>
+    <color name="primary_text_default_material_dark">#ffffff</color>
+    <color name="foreground_material_dark">#121111</color>
+    <color name="odd">#eee</color>
+    <color name="even">#fff</color>
+    <color name="devider">#4f525c</color>
+    <color name="dbx_white_opaque_100">#FFFFFFFF</color>
+    <color name="dbx_primary">#FF007EE5</color>
+    <color name="dbx_primary_dark">#FF0078d9</color>
+    <color name="dbx_color_control_normal">@color/dbx_primary</color>
+    <color name="dbx_color_control_activated">@color/dbx_primary</color>
+    <color name="dbx_color_control_highlight">@color/dbx_primary_dark</color>
+    <color name="dbx_color_switch_thumbNormal">@color/dbx_primary</color>
+
+    <color name="app_blue">#1bb5ec</color>
+    <color name="app_blue_dark">#0398cd</color>
+
+    <color name="gray_bg">#ebebeb</color>
+    <color name="gray_light">#cccccc</color>
+    <color name="gray_dark">#a1a1a1</color>
+
+    <color name="dark_text">#5a5a5a</color>
+
+    <color name="app_red">#da0038</color>
+
+    <color name="transparent_black">#80000000</color>
+    <color name="transparent_white">#B2ffffff</color>
+
+    <color name="connected">#64F20B</color>
+    <color name="not_connected">@color/app_red</color>
+
+</resources>

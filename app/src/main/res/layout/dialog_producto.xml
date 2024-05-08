@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_GrisClaro"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/ivImage_dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_column="0"
+            android:layout_margin="5dp"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/lblnombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginTop="5dp"
+            android:layout_row="0"
+            android:text="Nombre:"
+            android:textAppearance="@style/Kss_TextAparence.labelNormal"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvNombre_dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textMultiLine"
+            android:lines="2"
+            android:text="Nombre Producto"
+            android:textAppearance="@style/Kss_TextAparence.labelRegistro" />
+
+        <TextView
+            android:id="@+id/tvprecio_dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_row="1"
+            android:text="Precio Producto"
+            android:textAlignment="textEnd"
+            android:textAppearance="@style/Kss_TextAparence.labelNormal.Azul"
+            tools:ignore="RtlCompat" />
+
+        <TextView
+            android:id="@+id/lblprecio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_marginTop="5dp"
+            android:layout_row="1"
+            android:text="Precio:"
+            android:textAppearance="@style/Kss_TextAparence.labelNormal"
+            android:textSize="12sp" />
+    </GridLayout>
+
+</LinearLayout>

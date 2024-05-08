@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="kssImpuestos">
+    <item>Exento</item>
+    <item>IVA1</item>
+    <item>IVA2</item>
+    <item>IVA3</item>
+    </string-array>
+</resources>
